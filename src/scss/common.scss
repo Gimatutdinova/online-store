@@ -1,0 +1,214 @@
+// Обнуление стилей
+
+@import "nullstyle";
+
+// _____________________
+
+
+// Подключение шрифтов
+
+// @import "fonts";  
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+// _____________________
+
+
+// Переменные
+
+$maxWidthConteiner: 1440;
+$md: $maxWidthConteiner + 120;
+$md1: 980;
+$md1_1: 980 + 90;
+$md2: 790;
+$md2_1: 790 + 48;
+$md3: 320;
+$md3_1: 320 + 32;
+
+$black: #231F20;
+$white: #FFFFFF;
+$orange50: #FAA61A;
+$orange60: #FFBC4B;
+$orange70: #FFD999;
+$grey90: #F5F5F5;
+$grey80: #EDEDED;
+$grey70: #D9D9D9;
+$grey60: #BABABA;
+$grey50: #919191;
+$red: #FF0000;
+
+// _____________________
+
+
+// Шаблоны
+
+%boldText {
+    font-weight: 450;
+
+    @media screen and (max-width: ($md3 + px)) {
+        font-size: 14px;
+        font-weight: 450;
+        line-height: 18px;
+    }
+}
+
+%smallText {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+%btn_orange {
+    text-transform: uppercase;
+    background: $orange50;
+    border-radius: 5px;
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover {
+        transition: all .2s;
+        background: $orange60;
+        box-shadow: 0px 20px 24px -4px rgba(250, 166, 26, 0.25), 0px 8px 8px -4px rgba(250, 166, 26, 0.2);
+    }
+}
+
+%btn_grey {
+    text-transform: uppercase;
+    background: $grey80;
+    border-radius: 5px;
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover {
+        transition: all .2s;
+        background: $orange60;
+        box-shadow: 0px 20px 24px -4px rgba(250, 166, 26, 0.25), 0px 8px 8px -4px rgba(250, 166, 26, 0.2);
+    }
+}
+
+// _____________________
+
+
+// Миксины
+// _____________________
+
+
+
+body { 
+    font-family: Futura PT;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: $black;
+
+    &._scroll {
+        overflow: hidden;
+      }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+}
+
+[class*="_mainConteiner"] {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: $maxWidthConteiner + px;
+}
+
+[class*="_conteiner"] {
+    margin: 0 auto;
+    padding: 0 60px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@media screen and  (max-width: ($md1 + px))  {
+    [class*="_conteiner"] {
+        padding: 0 45px;
+        max-width: $md1_1;
+    }
+}
+
+@media screen and  (max-width: ($md2 + px))  {
+    [class*="_conteiner"] {
+        padding: 0 24px;
+        max-width: $md2_1;
+    }
+}
+
+@media screen and (max-width: ($md3 + px))  {
+    body { 
+        //background: ;
+    
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    [class*="_conteiner"] {
+        padding: 0 16px;
+        max-width: $md3_1;
+    }
+
+    h1 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    
+    h2 {
+        font-size: 19px;
+        line-height: 24px;
+    }
+    
+    h3 {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    
+    h4 {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    
+    h5 {
+        font-size: 13px;
+    }
+}

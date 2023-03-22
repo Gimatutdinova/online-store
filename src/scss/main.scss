@@ -1,0 +1,46 @@
+.main {
+    flex: 1 1 auto;
+    margin-top: 64px;
+}
+
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 312px;
+    height: 883px;
+    padding: 11px 0;
+    margin: 0;
+
+    &__links {
+      display: block;
+      background-color: inherit;
+      color: black;
+      margin-left: 16px;
+      padding: 14px 14px;
+      width: 280px;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 17px;
+
+      &:hover {
+        background-color: #ddd;
+      }
+
+      &._active {
+        background-color: #ddd;
+      }
+    }
+
+    &__content {
+      float: left;
+      padding: 0px 12px;
+      border: 1px solid #ccc;
+      width: 988px;
+      border-left: none;
+      height: 100%;
+    }
+}

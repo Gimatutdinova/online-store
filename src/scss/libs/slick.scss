@@ -1,0 +1,126 @@
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+
+.slider {   
+    // .slider__item
+
+    &__item {
+        margin-right: 20px;
+    }
+
+    // .slider__photo
+
+    &__photo {
+        position: relative;
+        height: 650px;
+        width: 1240px;
+        margin: 0 auto;
+
+        border-radius: 8px;
+    }
+
+    // .slider__title
+
+    &__title {
+        position: absolute;
+        top: 406px;
+        margin: 0 0 0 60px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .slider {   
+    
+        // .slider__photo
+    
+        &__photo {
+            height: 550px;
+            width: 940px;
+            object-fit: cover;
+        }
+
+        // .slider__title
+
+        &__title {
+            top: 406px;
+            margin: 0 0 0 60px;
+        }
+    }
+
+    .slick-arrow {
+        top: 625px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .slider {   
+    
+        // .slider__photo
+    
+        &__photo {
+            height: 450px;
+            width: 640px;
+            object-fit: cover;
+        }
+
+        // .slider__title
+
+        &__title {
+            top: 306px;
+            margin: 0 0 0 60px;
+            font-size: 50px;
+        }
+    }
+
+    .slick-arrow {
+        top: 525px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .slider {   
+    
+        // .slider__photo
+    
+        &__photo {
+            height: 450px;
+            width: 290px;
+            object-fit: cover;
+        }
+
+        // .slider__title
+
+        &__title {
+            top: 206px;
+            margin: 0 0 0 20px;
+            font-size: 40px;
+        }
+    }
+
+    .slick-arrow {
+        top: 525px;
+    }
+}
+
+.slick-arrow {
+    position: absolute;
+
+    top: 702px;
+    
+    height: 55px;
+   
+    font-size: 0;
+    cursor: pointer;
+    background-color: black;
+}
+
+.slick-prev {
+    width: 100px;
+    right: 51%;
+    background: url("../img/slider-1/ArrowPrev.png") no-repeat;
+}
+
+.slick-next {
+    width: 101px;
+    left: 51%;
+    background: url("../img/slider-1/ArrowNext.png") no-repeat;
+}

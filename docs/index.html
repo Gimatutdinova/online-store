@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+    <body class="body">
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__mainConteiner">
+        <div class="header__body">
+
+            <div class="header__top">
+                <div class="header__top_conteiner">
+                    <div class="header__top_city">
+                        <a href="https://goo.gl/maps/CjwtBgnJrZdShZpa9" target="_blank">
+                            <img class="header__top_cityIcon" src="./img/icons/icons.svg#header--Subtract" alt="">
+                            <p class="header__top_cityTitle">Санкт-Петербург</p>
+                        </a>
+                    </div>
+                    <div class="header__top_contact">
+                        <a aria-label="Chat on WhatsApp" href="https://wa.me/7XXXXXXXXXX" target="_blank">
+                            <div class="header__top_WA">
+                                <img class="header__top_WAicon" src="./img/icons/icons.svg#header--whatsapp" alt="">
+                                <p>Напишите нам в WhatsApp</p>
+                            </div>
+                        </a>
+                        
+                        <a href="mailto:email@mail.ru">
+                            <div class="header__top_email">
+                                <img class="header__top_emailIcon" src="./img/icons/icons.svg#header--email" alt="">
+                                <p>info@specokraska.ru</p>
+                            </div>
+                        </a>
+
+                        <button class="header__top_call" id="call_back">
+                            <img class="header__top_callIcon" src="./img/icons/icons.svg#header--phone_back" alt="">
+                            <p>Обратный звонок</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="header__btn"><img class="header__btn_btnIcon" src="./img/icons/icons.svg#header--Каталог" alt=""></button>
+            
+            <div class="header__center_conteiner">
+                <div class="header__center" >
+                    <img class="header__center_logo" src="./img/icons/icons.svg#header--logo" alt="Логотип">
+                    
+                    <form class="header__center_form">
+                        <div class="form-search">
+                            <input class="form-input" id="search" type="text" autocomplete="off" placeholder="Поиск">
+                            <div class="form-select">
+                                <div class="form-select_choice">
+                                    <p class="form-select_choiceText">по каталогу</p> 
+                                    <span class="form-select_choiceBtn"></span>
+                                </div>
+                                <div class="form-select_items">
+                                    <p class="form-select_item _active" id="catalog">по каталогу</p>
+                                    <p class="form-select_item" id="part">по запчастям</p>
+                                </div>
+                            </div>
+                            <button class="form-zoom"><img class="form-icon" src="./img/icons/icons.svg#header--zoom" alt=""></button>
+                        </div>
+                    </form>
+                    <a href="tel:12345678" class="header__center_phone">
+                        <img class="header__center_phoneIcon" src="./img/icons/icons.svg#header--phone" alt="">
+                        <p class="header__center_phoneText">+7 (495) 103-48-50</p>
+                    </a>
+                    <div class="header__center_icons">
+                        <a href=""><img class="header__center_favorite" src="./img/icons/icons.svg#header--Избранное" alt=""></a>
+                        <a href=""><img class="header__center_cart" src="./img/icons/icons.svg#header--Корзина" alt=""></a>
+                        <button><img class="header__center_user" id="entry" src="./img/icons/icons.svg#header--Account_Not_Authorized" alt=""></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+               <div class="header__bottom_conteiner"> 
+                    <nav class="header__bottom_menu">
+                        <button class="header__bottom_link header__bottom_catalog">
+                            <div class="header__bottom_btn">
+                                <span></span>
+                            </div>
+                            <h5>Каталог</h5>
+                        </button>
+                        <a href="/" class="header__bottom_link"><h5>О компании</h5></a>
+                        <a href="/" class="header__bottom_link"><h5>Новости</h5></a>
+                        <a href="/" class="header__bottom_link"><h5>Акции</h5></a>
+                        <a href="/" class="header__bottom_link"><h5>Статьи</h5></a>
+                        <a href="/" class="header__bottom_link"><h5>Доставка и оплата</h5></a>
+                        <a href="/" class="header__bottom_link"><h5>Youtube канал</h5></a>
+                        <a href="/" class="header__bottom_link"><h5>Контакты</h5></a>
+                    </nav>
+                </div>   
+            </div> 
+
+            <div class="modal">
+                <div class="modal__content">
+                    <div class="modal__close"></div>
+                    <form class="modal__form"></form> 
+                </div>                       
+            </div>
+
+        </div> 
+    </div>
+</header>
+            <main class="main">
+                <div class="main__conteiner">
+                </div>
+            </main>
+            <footer class="footer">
+    footer
+</footer>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="module" src="js/app.min.js"></script>   
+    </body>
+</html>
